@@ -26,5 +26,15 @@ namespace HelloWorldWindowForm
         {
             lblTitle.Text = "쾅!";
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
