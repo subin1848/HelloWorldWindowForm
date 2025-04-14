@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,6 +46,26 @@ namespace HelloWorldWindowForm
             Form formAbout2 = new Form();
             formAbout2.Text = "모달리스창(Medeless)";
             formAbout2.Show();
+        }
+        private void 열기ToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "텍스트 파일(*.txt)|*.txt";
+            DialogResult result = openFileDialog.ShowDialog();
+            switch(result)
+            {
+                case DialogResult.OK:
+                    //textBox1.Text = openFileDialog.FileName;
+                    var fileStream = new FileStream(openFileDialog.FileName, FileMode.Open);
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        textBox1.Text = reader.ReadToEnd();
+                    }
+                        break;
+                case DialogResult.Cancel:
+                    MessageBox.Show("취소되었습니다.");
+                    break;
+            }
         }
     }
 }
