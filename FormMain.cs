@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HelloWorldWindowForm
 {
-    public partial class Form1: Form
+    public partial class FormMain: Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -35,6 +35,16 @@ namespace HelloWorldWindowForm
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void 헬로월드정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formAbout1 = new FormAbout();
+            formAbout1.Text = "모달창";
+            formAbout1.ShowDialog();
+            Form formAbout2 = new Form();
+            formAbout2.Text = "모달리스창(Medeless)";
+            formAbout2.Show();
         }
     }
 }
