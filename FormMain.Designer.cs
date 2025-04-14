@@ -35,15 +35,19 @@
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.헬로월드정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.Font = new System.Drawing.Font("굴림", 30F);
-            this.lblTitle.Location = new System.Drawing.Point(63, 48);
+            this.lblTitle.Location = new System.Drawing.Point(20, 48);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(280, 60);
+            this.lblTitle.Size = new System.Drawing.Size(102, 60);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "꾸벅";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,9 +59,9 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("굴림", 20F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(63, 111);
+            this.button1.Location = new System.Drawing.Point(6, 153);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(280, 57);
+            this.button1.Size = new System.Drawing.Size(128, 42);
             this.button1.TabIndex = 1;
             this.button1.Text = "누르지마시오";
             this.button1.UseVisualStyleBackColor = false;
@@ -102,21 +106,54 @@
             this.헬로월드정보ToolStripMenuItem.Name = "헬로월드정보ToolStripMenuItem";
             this.헬로월드정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.헬로월드정보ToolStripMenuItem.Text = "헬로월드 정보";
+            this.헬로월드정보ToolStripMenuItem.Click += new System.EventHandler(this.헬로월드정보ToolStripMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(4, 29);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(260, 202);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.lblTitle);
+            this.groupBox2.Location = new System.Drawing.Point(270, 30);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(138, 201);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "버튼 클릭 연습";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(10, 49);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(248, 176);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "입력하세요.";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 232);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.groupBox2);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.Text = "3113 조수빈";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +168,9 @@
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 헬로월드정보ToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
