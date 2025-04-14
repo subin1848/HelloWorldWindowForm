@@ -38,6 +38,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.열기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.저장ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +83,8 @@
             // 파일ToolStripMenuItem
             // 
             this.파일ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.열기ToolStripMenuItem,
+            this.저장ToolStripMenuItem,
             this.끝내기ToolStripMenuItem});
             this.파일ToolStripMenuItem.Name = "파일ToolStripMenuItem";
             this.파일ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
@@ -89,7 +93,9 @@
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.끝내기ToolStripMenuItem.ShortcutKeyDisplayString = "X";
+            this.끝내기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.exit_Click);
             // 
@@ -104,7 +110,8 @@
             // 헬로월드정보ToolStripMenuItem
             // 
             this.헬로월드정보ToolStripMenuItem.Name = "헬로월드정보ToolStripMenuItem";
-            this.헬로월드정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.헬로월드정보ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
+            this.헬로월드정보ToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
             this.헬로월드정보ToolStripMenuItem.Text = "헬로월드 정보";
             this.헬로월드정보ToolStripMenuItem.Click += new System.EventHandler(this.헬로월드정보ToolStripMenuItem_Click);
             // 
@@ -137,6 +144,21 @@
             this.textBox1.Size = new System.Drawing.Size(248, 176);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "입력하세요.";
+            // 
+            // 열기ToolStripMenuItem
+            // 
+            this.열기ToolStripMenuItem.Name = "열기ToolStripMenuItem";
+            this.열기ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.열기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.열기ToolStripMenuItem.Text = "열기";
+            // 
+            // 저장ToolStripMenuItem
+            // 
+            this.저장ToolStripMenuItem.Name = "저장ToolStripMenuItem";
+            this.저장ToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+S";
+            this.저장ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.저장ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.저장ToolStripMenuItem.Text = "저장";
             // 
             // FormMain
             // 
@@ -171,6 +193,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem 열기ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 저장ToolStripMenuItem;
     }
 }
 
